@@ -13,6 +13,7 @@ class UserSchema(ma.SQLAlchemySchema):
     username = ma.auto_field(required=True, validate=validate.Length(min=3, max=64))
     email = ma.auto_field(required=True, validate=[validate.Length(max=128), validate.Email()])
     password = ma.String(required=True, load_only=True, validate=validate.Length(min=3))
+    avatar_url = ma.String(dump_only=True)
 
     @validates('username')
     def validate_username(self, value):

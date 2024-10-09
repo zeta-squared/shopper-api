@@ -1,4 +1,5 @@
 from api import db
+from hashlib import md5
 from typing import Optional
 from api.models import Token
 from sqlalchemy.orm import Mapped, WriteOnlyMapped, mapped_column
@@ -16,6 +17,11 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
+
+    @property
+    def avatar_url(self):
+        digest = md5(self.email.lower().encode('utf-8')).hexdigest()
+        return f'https://www.gravatar.com/avatar/{digest}?d=identicon'
 
     @property
     def password(self):
