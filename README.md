@@ -11,8 +11,8 @@ python3 -m venv venv
 Always ensure you are working with the virtual environment. We can now install all the dependencies using `pip`. You will need to make sure you have `pip` install using `python3 -m pip --version`. If you don't have `pip` installed you can find more information [here](https://pip.pypa.io/en/stable/installation/') on how to install.
 
 Now we are ready, to install and run the API. Activate the virtual environment by running `source venv/bin/activate`. Once inside the virtual environment run `python3 -m pip install -r requirements.txt` to install all dependencies.
-[!IMPORTANT]
-Make sure you are in the virtual environment. Otherwise the `pip` command will install the dependencies to your user account rather than just the virtual environment.
+>[!IMPORTANT]
+>Make sure you are in the virtual environment. Otherwise the `pip` command will install the dependencies to your user account rather than just the virtual environment.
 
 Once all the dependencies are installed you need to configure the envionrment variables. Create the file `./config/.env`. The following configuration variables need to be set
 ```
@@ -28,8 +28,8 @@ SQLALCHEMY_DATABASE_URI=sqlite:///shopper.db
 SECRET_KEY='my secret key'
 ```
 These are just default/dummy values I have included here. You are welcome to choose what you please.
-[!CAUTION]
-If you ever deploy this application make sure the `SECRET_KEY` is set to something secure. This can be done with the [UUID](https://docs.python.org/3/library/uuid.html) Python module or another method of your preference.
+>[!CAUTION]
+>If you ever deploy this application make sure the `SECRET_KEY` is set to something secure. This can be done with the [UUID](https://docs.python.org/3/library/uuid.html) Python module or another method of your preference.
 
 Finally, create the file `./.flaskenv` and set
 ```
