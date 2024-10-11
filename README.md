@@ -39,15 +39,15 @@ Now use `flask run` to start the application. It will run, by default, on `local
 
 ### Acknowledgements
 The API uses several Python/Flask packages. I have listed as many as I can remember here but for a complete list see `./requirements.txt`
--[APIFairy](https://apifairy.readthedocs.io)
--[Flask-CORS](https://flask-cors.readthedocs.io/en/latest)
--[flask-HTTPAuth](https://flask-httpauth.readthedocs.io)
--[Flask-Marshmallow](https://flask-marshmallow.readthedocs.io)
--[Flask-Migrate](https://flask-migrate.readthedocs.io)
--[Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io)
--[Marshmallow](https://marshmallow.readthedocs.io)
--[PyJWT](https://pyjwt.readthedocs.io/en/latest)
--[SQLAlchemy](https://www.sqlalchemy.org)
--[Werkzeug](https://werkzeug.palletsprojects.com)
+- [APIFairy](https://apifairy.readthedocs.io)
+- [Flask-CORS](https://flask-cors.readthedocs.io/en/latest)
+- [flask-HTTPAuth](https://flask-httpauth.readthedocs.io)
+- [Flask-Marshmallow](https://flask-marshmallow.readthedocs.io)
+- [Flask-Migrate](https://flask-migrate.readthedocs.io)
+- [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io)
+- [Marshmallow](https://marshmallow.readthedocs.io)
+- [PyJWT](https://pyjwt.readthedocs.io/en/latest)
+- [SQLAlchemy](https://www.sqlalchemy.org)
+- [Werkzeug](https://werkzeug.palletsprojects.com)
 
 Apologies if I have left someones' work out.
