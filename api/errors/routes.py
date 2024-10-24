@@ -13,7 +13,18 @@ def not_found(error):
 @bp.app_errorhandler(400)
 @response(ErrorSchema, status_code=400)
 def bad_request(error):
-    return error
+    if hasattr(error.description, 'messages_dict'):
+        messages = {}
+        for key in error.description.messages_dict:
+            messages[key] = error.description.messages_dict[key][0]
+        return {
+                'code': error.code,
+                'name': error.name,
+                'description': error.description,
+                'messages': messages if error.description.messages_dict else None
+                }
+    else:
+        return error
 
 
 @bp.app_errorhandler(401)
