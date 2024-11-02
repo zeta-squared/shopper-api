@@ -1,16 +1,16 @@
 # Shopper API
-An API backend built to support the [shopper](https://github.com/zeta-squared/shopper) React application.
+A [Flask](https://flask.palletsprojects.com/en/stable/) API backend built to support the [shopper](https://github.com/zeta-squared/shopper) React application.
 
 ## Installation
-This API was developed with Python 3.12.3. To avoid any version errors ensure yours is also on this same release by using `python3 --version`. If you are comfortable working on an older version you can go ahead and see all requirements, and their version, in `./requirements.txt`
+This API was developed with Python 3.12.3. To avoid any version errors ensure yours is also on this release or above by using `python3 --version`. If you are comfortable working on an older version you can go ahead and see all requirements, and their version, in `./requirements.txt`.
 
-Once you have ensured your Python install is ready to use create a virtual environment within the projection directory, `./`, by running
+Once you have ensured your Python install is ready to use, create a virtual environment within the project directory, `./`, by running
 ```
 python3 -m venv venv
 ```
 Always ensure you are working with the virtual environment. We can now install all the dependencies using `pip`. You will need to make sure you have `pip` install using `python3 -m pip --version`. If you don't have `pip` installed you can find more information [here](https://pip.pypa.io/en/stable/installation/') on how to install.
 
-Now we are ready, to install and run the API. Activate the virtual environment by running `source venv/bin/activate`. Once inside the virtual environment run `python3 -m pip install -r requirements.txt` to install all dependencies.
+Now we are ready to install and run the API. Activate the virtual environment by running `source venv/bin/activate`. Once inside the virtual environment run `python3 -m pip install -r requirements.txt` to install all dependencies.
 >[!IMPORTANT]
 >Make sure you are in the virtual environment. Otherwise the `pip` command will install the dependencies to your user account rather than just the virtual environment.
 
