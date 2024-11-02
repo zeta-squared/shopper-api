@@ -35,7 +35,7 @@ Finally, create the file `./.flaskenv` and set
 ```
 FLASK_APP=shopper.py
 ```
-Now use `flask run` to start the application. It will run, by default, on `localhost:5000`. You can optionally, change the port by using the `FLASK_RUN_PORT=<port>` variable in `./.flaskenv`.
+Now use `flask run` to start the application. It will run, by default, on `localhost:5000`. You can optionally, change the port by using the `FLASK_RUN_PORT=<port>` variable in `./.flaskenv`. Documentation can be found at `localhost:<port>/`.
 
 ### Acknowledgements
 The API uses several Python/Flask packages. I have listed as many as I can remember here but for a complete list see `./requirements.txt`
