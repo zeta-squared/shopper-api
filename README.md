@@ -1,4 +1,4 @@
-# Shopper API
+# Shopper Flask API
 A [Flask](https://flask.palletsprojects.com/en/stable/) API backend built to support the [shopper](https://github.com/zeta-squared/shopper) React application.
 
 ## Installation
