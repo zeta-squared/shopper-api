@@ -35,6 +35,11 @@ Finally, create the file `./.flaskenv` and set
 ```
 FLASK_APP=shopper.py
 ```
+
+I have included all the database migration files (generated with
+[Flask-Migrate](https://flask-migrate.readthedocs.io)) in `./migrations/`. To initialise the database run
+`flask db upgrade`. This will create the `sqlite` database `./instance/shopper.db`.
+
 Now use `flask run` to start the application. It will run, by default, on `localhost:5000`. You can optionally, change the port by using the `FLASK_RUN_PORT=<port>` variable in `./.flaskenv`. Documentation can be found at `localhost:<port>/`.
 
 ### Acknowledgements
